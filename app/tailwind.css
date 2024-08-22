@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  ::-webkit-scrollbar {
+    @apply w-2;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-gray-300;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-gray-400/80 rounded-md;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-gray-400/60;
+  }
+
+  /* 滚动条轨道颜色 */
+  .dark ::-webkit-scrollbar-track {
+    background-color: #1a202c !important; /* 深色模式下轨道颜色 */
+  }
+
+  /* 滚动条滑块颜色 */
+  .dark ::-webkit-scrollbar-thumb {
+    background-color: #4a5568 !important; /* 深色模式下滑块颜色 */
+  }
+
+  /* 滚动条整体颜色 */
+  .dark ::-webkit-scrollbar {
+    background-color: #1a202c !important; /* 深色模式下整体颜色 */
+  }
+}
